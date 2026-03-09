@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My bookings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">✈️ <span>FlyLite</span></div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="flights.html">Flights</a>
+                <a href="bookings.html" class="active">My bookings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>My bookings</h1>
+
+        <section class="controls">
+            <input id="emailFilter" class="input" placeholder="Enter your email" />
+            <button id="findBookingsBtn" class="btn">Find</button>
+            <button id="clearBookingsBtn" class="btn btn-ghost">Clear</button>
+        </section>
+
+        <div id="bookingsStatus" class="status"></div>
+        <div id="bookings" class="grid"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="muted">© <span id="year"></span> FlyLite</span>
+            <span class="muted">Privacy • Cookies • Contact</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

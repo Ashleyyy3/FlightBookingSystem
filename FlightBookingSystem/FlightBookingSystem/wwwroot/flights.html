@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">✈️ <span>FlyLite</span></div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="flights.html" class="active">Flights</a>
+                <a href="bookings.html">My bookings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Flights</h1>
+
+        <section class="controls">
+            <input id="fromInput" class="input" placeholder="From" />
+            <input id="toInput" class="input" placeholder="To" />
+            <button id="searchBtn" class="btn">Search</button>
+            <button id="resetBtn" class="btn btn-ghost">Reset</button>
+        </section>
+
+        <div id="status" class="status"></div>
+        <div id="flights" class="grid"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="muted">© <span id="year"></span> FlyLite</span>
+            <span class="muted">Privacy • Cookies • Contact</span>
+        </div>
+    </footer>
+
+
+    <dialog id="bookingDialog" class="dialog">
+        <form method="dialog" class="dialog-card" id="bookingForm">
+            <h2 class="dialog-title">Book flight</h2>
+
+            <div class="muted" id="selectedFlightText" style="margin-bottom:10px;"></div>
+
+            <input type="hidden" id="selectedFlightId" />
+
+            <label class="label">Name</label>
+            <input id="passengerName" class="input" placeholder="Your name" required />
+
+            <label class="label" style="margin-top:10px;">Email</label>
+            <input id="passengerEmail" class="input" placeholder="you@email.com" type="email" required />
+
+            <div class="dialog-actions">
+                <button type="button" class="btn btn-ghost" id="cancelDialogBtn">Cancel</button>
+                <button type="submit" class="btn">Confirm booking</button>
+            </div>
+        </form>
+    </dialog>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

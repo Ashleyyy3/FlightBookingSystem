@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyLite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">✈️ <span>FlyLite</span></div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="flights.html">Flights</a>
+                <a href="bookings.html">My bookings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero card">
+            <h1 class="hero-title">Find your next flight</h1>
+            <p class="muted">Search routes and book in seconds.</p>
+
+            <form id="homeSearchForm" class="hero-form">
+                <input id="homeFrom" class="input" placeholder="From (e.g. Stockholm)" />
+                <input id="homeTo" class="input" placeholder="To (e.g. London)" />
+                <button class="btn" type="submit">Search flights</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="muted">© <span id="year"></span> FlyLite</span>
+            <span class="muted">Privacy • Cookies • Contact</span>
+        </div>
+    </footer>
+
+    <!-- Cookie banner -->
+    <div id="cookieBanner" class="cookie-banner hidden">
+        <div>
+            <strong>Cookies</strong>
+            <div class="muted">We use cookies to improve the experience.</div>
+        </div>
+        <div class="cookie-actions">
+            <button id="acceptCookies" class="btn">Accept</button>
+            <button id="declineCookies" class="btn btn-ghost">Decline</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
